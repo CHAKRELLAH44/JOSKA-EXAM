@@ -1,0 +1,38 @@
+[versions]
+# Définissez explicitement la version AGP (Android Gradle Plugin)
+agp = "8.9.2"  # ou la version que vous utilisez
+espresso-core = "3.6.1"
+firebase-bom = "32.7.4"
+firebase-firestore = "25.1.4"
+google-services = "4.4.2"
+junit = "4.13.2"
+junit-version = "1.2.1"
+kotlin = "1.9.22"  # ajoutez aussi la version Kotlin si nécessaire
+firebase-auth = "23.2.0"
+activity = "1.10.1"
+firebase-database = "21.0.0"
+
+
+[libraries]
+# Bibliothèques Android standard
+appcompat = { group = "androidx.appcompat", name = "appcompat", version = "1.7.0" }
+espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "espresso-core" }
+ext-junit = { module = "androidx.test.ext:junit", version.ref = "junit-version" }
+google-firebase-firestore = { module = "com.google.firebase:firebase-firestore", version.ref = "firebase-firestore" }
+junit = { module = "junit:junit", version.ref = "junit" }
+material = { group = "com.google.android.material", name = "material", version = "1.12.0" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version = "2.2.1" }
+
+# Bibliothèques Firebase
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebase-auth" }
+firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore" }
+firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebase-database" }
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+google-services = { id = "com.google.gms.google-services", version.ref = "google-services" }

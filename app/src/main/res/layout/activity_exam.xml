@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/black"
+    android:gravity="top|center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Exam">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="356dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="Exam"
+        android:textColor="@color/main"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="wrap_content"
+        android:layout_height="480dp"
+        android:layout_above="@+id/submit"
+        android:layout_below="@id/title"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="46dp"
+        android:background="@drawable/grey_background"
+        android:divider="@color/transparent"
+        android:dividerHeight="20dp" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/grey_background"
+        android:padding="10dp"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="@color/main"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</RelativeLayout>

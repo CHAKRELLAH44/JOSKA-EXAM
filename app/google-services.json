@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "85831728972",
+    "project_id": "joskaexam",
+    "storage_bucket": "joskaexam.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:85831728972:android:30bda1b1a67c3b8eec99e9",
+        "android_client_info": {
+          "package_name": "com.example.joska_exam"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHpiRa1HjItWlY0vgbsP4dnnPXAVb2zRI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
